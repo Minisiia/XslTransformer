@@ -1,6 +1,6 @@
 ## XmlXsdPowerTool
 Create an XML file and its corresponding XSD schema.
-## 6. Web-services 3. 3. JAX-WS and JAXB, Apache CXF
+## 6. Web-services 3.3. JAX-WS and JAXB, Apache CXF
 ## Задание 5
 
 Определить метод, производящий преобразование разработанного XML документа в документ, указанный в каждом задании. 
@@ -66,7 +66,9 @@ Create an XML file and its corresponding XSD schema.
 ## Заметки
 
 [Методы преобразования в каждом задании](#методы-преобразования-в-каждом-задании)
+
 [Основные элементы XSLT](#основные-элементы-xslt)
+
 [Оператор //](#оператор-)
 
 
@@ -74,14 +76,14 @@ Create an XML file and its corresponding XSD schema.
 
 1. Оранжерея.
 
-   <xsl:for-each> для перебора всех дочерних элементов <Plant> внутри <Flower>.
+   **xsl:for-each** для перебора всех дочерних элементов ```<Plant>``` внутри ```<Flower>```.
 
-   <xsl:sort> сортировка по значению элемента <Temperature> в возрастающем порядке.
+   **xsl:sort** сортировка по значению элемента ```<Temperature>``` в возрастающем порядке.
 2. Алмазный фонд.
 
-   <xsl:value-ofapply-templates> для извлечения значения  <Name>,  <Preciousness>,  <Origin>, <Color>,  <Transparency>, <Facets>   
+   **xsl:value-of apply-templates** для извлечения значения  ```<Name>```, ```<Preciousness>```,  ```<Origin>```, ```<Color>```,  ```<Transparency>```, ```<Facets>```   
 
-   <xsl:apply-templates> вызов шаблона для реализации <VisualParameters>
+   **xsl:apply-templates** вызов шаблона для реализации ```<VisualParameters>```
 3. Тарифы мобильных компаний.
 
 
