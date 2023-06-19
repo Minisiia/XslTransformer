@@ -44,9 +44,14 @@ public class Main {
 //                "src/main/resources/1_greenhouse/diamond.xml",
 //                "src/main/resources/1_greenhouse/transformed_greenhouse.html");
 
-        System.out.println("2. Алмазный фонд");
-        XslTransformer.xslTransform("src/main/resources/2_diamond_fund/diamond.xslt",
-                "src/main/resources/2_diamond_fund/diamond.xml",
-                "src/main/resources/2_diamond_fund/transformed_diamond.xml");
+//        System.out.println("2. Алмазный фонд");
+//        XslTransformer.xslTransform("src/main/resources/2_diamond_fund/diamond.xslt",
+//                "src/main/resources/2_diamond_fund/diamond.xml",
+//                "src/main/resources/2_diamond_fund/transformed_diamond.xml");
+
+        System.out.println("3. Тарифы мобильных компаний.");
+        XslTransformer.xslTransform("src/main/resources/3_tariffs/tariffs.xslt",
+                "src/main/resources/3_tariffs/tariffs.xml",
+                "src/main/resources/3_tariffs/transformed_tariffs.html");
     }
 }

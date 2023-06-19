@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Tariff xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation = "tariffs.xsd">
+    <Rate>
+        <Name>Plan A</Name>
+        <OperatorName>Mobile Operator A</OperatorName>
+        <Payroll>25</Payroll>
+        <CallPrices>
+            <InNetwork>0.10</InNetwork>
+            <OutNetwork>0.25</OutNetwork>
+            <Landline>0.15</Landline>
+        </CallPrices>
+        <SMSPrice>0.05</SMSPrice>
+        <Parameters>
+            <FavoriteNumber>5</FavoriteNumber>
+            <Billing>Per-minute</Billing>
+            <ConnectionFee>0</ConnectionFee>
+        </Parameters>
+    </Rate>
+
+    <Rate>
+        <Name>Plan B</Name>
+        <OperatorName>Mobile Operator B</OperatorName>
+        <Payroll>50</Payroll>
+        <CallPrices>
+            <InNetwork>0.08</InNetwork>
+            <OutNetwork>0.30</OutNetwork>
+            <Landline>0.20</Landline>
+        </CallPrices>
+        <SMSPrice>0.03</SMSPrice>
+        <Parameters>
+            <FavoriteNumber>Unlimited</FavoriteNumber>
+            <Billing>Per-minute</Billing>
+            <ConnectionFee>10</ConnectionFee>
+        </Parameters>
+    </Rate>
+
+    <Rate>
+        <Name>Plan C</Name>
+        <OperatorName>Mobile Operator C</OperatorName>
+        <Payroll>30</Payroll>
+        <CallPrices>
+            <InNetwork>0.12</InNetwork>
+            <OutNetwork>0.35</OutNetwork>
+            <Landline>0.25</Landline>
+        </CallPrices>
+        <SMSPrice>0.08</SMSPrice>
+        <Parameters>
+            <FavoriteNumber>2</FavoriteNumber>
+            <Billing>Per-second</Billing>
+            <ConnectionFee>5</ConnectionFee>
+        </Parameters>
+    </Rate>
+</Tariff>

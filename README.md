@@ -81,10 +81,16 @@ Create an XML file and its corresponding XSD schema.
    **xsl:sort** сортировка по значению элемента ```<Temperature>``` в возрастающем порядке.
 2. Алмазный фонд.
 
-   **xsl:value-of apply-templates** для извлечения значения  ```<Name>```, ```<Preciousness>```,  ```<Origin>```, ```<Color>```,  ```<Transparency>```, ```<Facets>```   
+   **xsl:value-of** для извлечения значения  ```<Name>```, ```<Preciousness>```,  ```<Origin>```, ```<Color>```,  ```<Transparency>```, ```<Facets>```   
 
    **xsl:apply-templates** вызов шаблона для реализации ```<VisualParameters>```
 3. Тарифы мобильных компаний.
+
+   **xsl:apply-templates select="Tariff/Rate"** вызов шаблона всем элементам ```<Rate>```, которые являются дочерними элементами элемента ```<Tariff>```.
+
+   **xsl:sort select="Payroll" data-type="number"** Атрибут data-type="number" указывает тип данных для сортировки. В данном случае, мы указываем тип данных "number" (число), так как абонентская плата обычно представляет числовое значение.
+   
+   **xsl:value-of**
 
 
 ### Основные элементы XSLT
