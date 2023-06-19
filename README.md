@@ -100,7 +100,9 @@ Create an XML file and its corresponding XSD schema.
 4. Лекарственные препараты.
 
 **xsl:apply-templates select="Medication/Versions/Version"**
+
 **xsl:sort select="Producers/Producer/Package/Price" data-type="number"/**
+
 **xsl:value-of select="../../Name"**
 
 5. Компьютеры.
