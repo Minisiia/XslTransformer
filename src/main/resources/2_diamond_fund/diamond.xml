@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Gem xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation = "diamond.xsd">
+        <Stone>
+            <Name>Diamond</Name>
+            <Preciousness>Precious</Preciousness>
+            <Origin>South Africa</Origin>
+            <VisualParameters>
+                <Color>White</Color>
+                <Transparency>80</Transparency>
+                <Facets>57</Facets>
+            </VisualParameters>
+            <Value>1.5</Value>
+        </Stone>
+        <Stone>
+            <Name>Emerald</Name>
+            <Preciousness>Precious</Preciousness>
+            <Origin>Colombia</Origin>
+            <VisualParameters>
+                <Color>Green</Color>
+                <Transparency>90</Transparency>
+                <Facets>15</Facets>
+            </VisualParameters>
+            <Value>0.75</Value>
+        </Stone>
+        <Stone>
+            <Name>Amethyst</Name>
+            <Preciousness>Semi-precious</Preciousness>
+            <Origin>Brazil</Origin>
+            <VisualParameters>
+                <Color>Purple</Color>
+                <Transparency>70</Transparency>
+                <Facets>12</Facets>
+            </VisualParameters>
+            <Value>0.4</Value>
+        </Stone>
+    </Gem>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Flower xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation = "greenhouse.xsd">>
+    <Plant>
+        <Name>Rose</Name>
+        <Soil>Loamy</Soil>
+        <Origin>Europe</Origin>
+        <VisualParameters>
+            <StemColor>Red</StemColor>
+            <LeafColor>Green</LeafColor>
+            <AverageSize>Medium</AverageSize>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>20</Temperature>
+            <LightExposure>Sun-loving</LightExposure>
+            <Watering>200</Watering>
+        </GrowingTips>
+        <Multiplying>Seeds</Multiplying>
+    </Plant>
+    <Plant>
+        <Name>Tulip</Name>
+        <Soil>Podzolic</Soil>
+        <Origin>Netherlands</Origin>
+        <VisualParameters>
+            <StemColor>Yellow</StemColor>
+            <LeafColor>Green</LeafColor>
+            <AverageSize>Small</AverageSize>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>15</Temperature>
+            <LightExposure>Sun-loving</LightExposure>
+            <Watering>150</Watering>
+        </GrowingTips>
+        <Multiplying>Bulbs</Multiplying>
+    </Plant>
+    <Plant>
+        <Name>Orchid</Name>
+        <Soil>Sandy</Soil>
+        <Origin>Tropical regions</Origin>
+        <VisualParameters>
+            <StemColor>Pink</StemColor>
+            <LeafColor>Green</LeafColor>
+            <AverageSize>Small</AverageSize>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>25</Temperature>
+            <LightExposure>Shade-tolerant</LightExposure>
+            <Watering>100</Watering>
+        </GrowingTips>
+        <Multiplying>Stems</Multiplying>
+    </Plant>
+</Flower>

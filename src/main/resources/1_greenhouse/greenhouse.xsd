@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Flower" type="FlowerType"/>
+  <xs:complexType name="VisualParametersType">
+    <xs:sequence>
+      <xs:element name="StemColor">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Red"/>
+            <xs:enumeration value="Yellow"/>
+            <xs:enumeration value="Pink"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="LeafColor"/>
+      <xs:element name="AverageSize">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Medium"/>
+            <xs:enumeration value="Small"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GrowingTipsType">
+    <xs:sequence>
+      <xs:element name="Temperature">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="20"/>
+            <xs:enumeration value="15"/>
+            <xs:enumeration value="25"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="LightExposure">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Sun-loving"/>
+            <xs:enumeration value="Shade-tolerant"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Watering">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="200"/>
+            <xs:enumeration value="150"/>
+            <xs:enumeration value="100"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PlantType">
+    <xs:sequence>
+      <xs:element name="Name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Rose"/>
+            <xs:enumeration value="Tulip"/>
+            <xs:enumeration value="Orchid"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Soil">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Loamy"/>
+            <xs:enumeration value="Podzolic"/>
+            <xs:enumeration value="Sandy"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Origin">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Europe"/>
+            <xs:enumeration value="Netherlands"/>
+            <xs:enumeration value="Tropical regions"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="VisualParametersType" name="VisualParameters"/>
+      <xs:element type="GrowingTipsType" name="GrowingTips"/>
+      <xs:element name="Multiplying">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Seeds"/>
+            <xs:enumeration value="Bulbs"/>
+            <xs:enumeration value="Stems"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FlowerType" mixed="true">
+    <xs:sequence>
+      <xs:element type="PlantType" name="Plant" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
