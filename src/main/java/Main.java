@@ -49,9 +49,17 @@ public class Main {
 //                "src/main/resources/2_diamond_fund/diamond.xml",
 //                "src/main/resources/2_diamond_fund/transformed_diamond.xml");
 
-        System.out.println("3. Тарифы мобильных компаний.");
-        XslTransformer.xslTransform("src/main/resources/3_tariffs/tariffs.xslt",
-                "src/main/resources/3_tariffs/tariffs.xml",
-                "src/main/resources/3_tariffs/transformed_tariffs.html");
+//        System.out.println("3. Тарифы мобильных компаний.");
+//        XslTransformer.xslTransform("src/main/resources/3_tariffs/tariffs.xslt",
+//                "src/main/resources/3_tariffs/tariffs.xml",
+//                "src/main/resources/3_tariffs/transformed_tariffs.html");
+
+        System.out.println("4. Лекарственные препараты.");
+        XslTransformer.xslTransform("src/main/resources/4_medications/medications.xslt",
+                "src/main/resources/4_medications/medications.xml",
+                "src/main/resources/4_medications/transformed_medications.html");
+
+
+
     }
 }

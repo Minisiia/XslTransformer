@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Medicine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="medications.xsd">
+    <Medication>
+        <Name>Paracetamol</Name>
+        <Group>Analgesics</Group>
+        <Analogs>
+            <Analog>Ibuprofen</Analog>
+            <Analog>Aspirin</Analog>
+        </Analogs>
+        <Versions>
+            <Version>
+                <Consistency>Tablets</Consistency>
+                <Producers>
+                    <Producer>
+                        <Certificate>
+                            <Number>12345</Number>
+                            <IssueDate>2022-01-01</IssueDate>
+                            <ExpiryDate>2023-12-31</ExpiryDate>
+                            <IssuingAuthority>Drug Administration</IssuingAuthority>
+                        </Certificate>
+                        <Package>
+                            <Type>Blister Pack</Type>
+                            <Quantity>20</Quantity>
+                            <Price>5.99</Price>
+                        </Package>
+                        <Dosage>500mg</Dosage>
+                        <Frequency>Every 4-6 hours</Frequency>
+                    </Producer>
+                    <Producer>
+                        <Certificate>
+                            <Number>67890</Number>
+                            <IssueDate>2022-03-15</IssueDate>
+                            <ExpiryDate>2024-02-28</ExpiryDate>
+                            <IssuingAuthority>Health Department</IssuingAuthority>
+                        </Certificate>
+                        <Package>
+                            <Type>Bottle</Type>
+                            <Quantity>100</Quantity>
+                            <Price>12.99</Price>
+                        </Package>
+                        <Dosage>250mg</Dosage>
+                        <Frequency>Every 6-8 hours</Frequency>
+                    </Producer>
+                </Producers>
+            </Version>
+            <Version>
+                <Consistency>Syrup</Consistency>
+                <Producers>
+                    <Producer>
+                        <Certificate>
+                            <Number>67390</Number>
+                            <IssueDate>2020-03-15</IssueDate>
+                            <ExpiryDate>2020-02-18</ExpiryDate>
+                            <IssuingAuthority>Н.K. Department</IssuingAuthority>
+                        </Certificate>
+                        <Package>
+                            <Type>Bottle</Type>
+                            <Quantity>200</Quantity>
+                            <Price>20.99</Price>
+                        </Package>
+                        <Dosage>500mg</Dosage>
+                        <Frequency>Every 12 hours</Frequency>
+                    </Producer>
+                </Producers>
+            </Version>
+        </Versions>
+    </Medication>
+    <Medication>
+        <Name>Amoxicillin</Name>
+        <Group>Antibiotics</Group>
+        <Analogs>
+            <Analog>Penicillin</Analog>
+            <Analog>Cephalexin</Analog>
+        </Analogs>
+        <Versions>
+            <Version>
+                <Consistency>Capsules</Consistency>
+                <Producers>
+                    <Producer>
+                        <Certificate>
+                            <Number>54321</Number>
+                            <IssueDate>2022-02-01</IssueDate>
+                            <ExpiryDate>2023-12-31</ExpiryDate>
+                            <IssuingAuthority>Drug Administration</IssuingAuthority>
+                        </Certificate>
+                        <Package>
+                            <Type>Bottle</Type>
+                            <Quantity>30</Quantity>
+                            <Price>9.99</Price>
+                        </Package>
+                        <Dosage>500mg</Dosage>
+                        <Frequency>Twice a day</Frequency>
+                    </Producer>
+                    <Producer>
+                        <Certificate>
+                            <Number>09876</Number>
+                            <IssueDate>2022-03-15</IssueDate>
+                            <ExpiryDate>2024-02-28</ExpiryDate>
+                            <IssuingAuthority>Health Department</IssuingAuthority>
+                        </Certificate>
+                        <Package>
+                            <Type>Blister Pack</Type>
+                            <Quantity>10</Quantity>
+                            <Price>4.99</Price>
+                        </Package>
+                        <Dosage>250mg</Dosage>
+                        <Frequency>Thrice a day</Frequency>
+                    </Producer>
+                </Producers>
+            </Version>
+        </Versions>
+    </Medication>
+</Medicine>
