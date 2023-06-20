@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Critical xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Component>
+        <Name>Processor</Name>
+        <Origin>USA</Origin>
+        <Price>1000</Price>
+        <Type>
+            <TypeComponent>Peripheral</TypeComponent>
+            <PowerConsumption>65</PowerConsumption>
+            <Cooler>Yes</Cooler>
+            <Group>Input/Output Devices</Group>
+            <Ports>USB</Ports>
+        </Type>
+    </Component>
+    <Component>
+        <Name>Graphics Card</Name>
+        <Origin>Taiwan</Origin>
+        <Price>500</Price>
+        <Type>
+            <TypeComponent>Peripheral</TypeComponent>
+            <PowerConsumption>150</PowerConsumption>
+            <Cooler>Yes</Cooler>
+            <Group>Multimedia</Group>
+            <Ports>USB</Ports>
+        </Type>
+    </Component>
+    <Component>
+        <Name>Memory</Name>
+        <Origin>China</Origin>
+        <Price>200</Price>
+        <Type>
+            <TypeComponent>Non-Peripheral</TypeComponent>
+            <PowerConsumption>5</PowerConsumption>
+            <Cooler>No</Cooler>
+            <Group>Input/Output Devices</Group>
+            <Ports>USB</Ports>
+        </Type>
+    </Component>
+    <Component>
+        <Name>Hard Drive</Name>
+        <Origin>Japan</Origin>
+        <Price>150</Price>
+        <Type>
+            <TypeComponent>Non-Peripheral</TypeComponent>
+            <PowerConsumption>10</PowerConsumption>
+            <Cooler>No</Cooler>
+            <Group>Multimedia</Group>
+            <Ports>USB, LPT</Ports>
+        </Type>
+    </Component>
+</Critical>
