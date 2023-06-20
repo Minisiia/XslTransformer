@@ -39,23 +39,26 @@ import xsl_transformer.XslTransformer;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("1. Оранжерея");
-        XslTransformer.xslTransform("1_greenhouse","greenhouse.xslt","greenhouse.xml","transformed_greenhouse.html");
+//        System.out.println("1. Оранжерея");
+//        XslTransformer.xslTransform("1_greenhouse","greenhouse.xslt","greenhouse.xml","transformed_greenhouse.html");
+//
+//        System.out.println("2. Алмазный фонд");
+//        XslTransformer.xslTransform("2_diamond_fund","diamond.xslt","diamond.xml","transformed_diamond.xml");
+//
+//        System.out.println("3. Тарифы мобильных компаний.");
+//        XslTransformer.xslTransform("3_tariffs","tariffs.xslt","tariffs.xml","transformed_tariffs.html");
+//
+//        System.out.println("4. Лекарственные препараты.");
+//        XslTransformer.xslTransform("4_medications","medications.xslt","medications.xml","transformed_medications.html");
+//
+//        System.out.println("5. Компьютеры.");
+//        XslTransformer.xslTransform("5_computers","computers.xslt","computers.xml","transformed_computers.xml");
+//
+//        System.out.println("7. Столовые приборы.");
+//        XslTransformer.xslTransform("7_cutlery","cutlery.xslt","cutlery.xml","transformed_cutlery.html");
 
-        System.out.println("2. Алмазный фонд");
-        XslTransformer.xslTransform("2_diamond_fund","diamond.xslt","diamond.xml","transformed_diamond.xml");
-
-        System.out.println("3. Тарифы мобильных компаний.");
-        XslTransformer.xslTransform("3_tariffs","tariffs.xslt","tariffs.xml","transformed_tariffs.html");
-
-        System.out.println("4. Лекарственные препараты.");
-        XslTransformer.xslTransform("4_medications","medications.xslt","medications.xml","transformed_medications.html");
-
-        System.out.println("5. Компьютеры.");
-        XslTransformer.xslTransform("5_computers","computers.xslt","computers.xml","transformed_computers.xml");
-
-        System.out.println("7. Столовые приборы.");
-        XslTransformer.xslTransform("7_cutlery","cutlery.xslt","cutlery.xml","transformed_cutlery.html");
+        System.out.println("8. Самолеты.");
+        XslTransformer.xslTransform("8_planes","plane.xslt","plane.xml","transformed_plane.csv");
 
 
     }

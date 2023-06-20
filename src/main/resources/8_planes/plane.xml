@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Plane xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="plane.xsd">
+    <Aircraft>
+        <Model>Boeing 747</Model>
+        <Origin>United States</Origin>
+        <Chars>
+            <Type>Passenger</Type>
+            <CrewSeats>2</CrewSeats>
+        <OtherChars>
+            <Capacity>128000</Capacity>
+            <PassagerSeats>660</PassagerSeats>
+        </OtherChars>
+        <Radar>true</Radar>
+        </Chars>
+        <Parameters>
+            <Length>70</Length>
+            <Width>64.4</Width>
+            <Height>19.4</Height>
+        </Parameters>
+        <Price>25000000</Price>
+    </Aircraft>
+    <Aircraft>
+        <Model>Airbus A380</Model>
+        <Origin>France</Origin>
+        <Chars>
+            <Type>Passenger</Type>
+            <CrewSeats>2</CrewSeats>
+            <OtherChars>
+                <Capacity>575000</Capacity>
+                <PassengerSeats>853</PassengerSeats>
+            </OtherChars>
+            <Radar>true</Radar>
+        </Chars>
+        <Parameters>
+            <Length>73</Length>
+            <Width>79.8</Width>
+            <Height>24.1</Height>
+        </Parameters>
+        <Price>30000000</Price>
+    </Aircraft>
+    <Aircraft>
+        <Model>Cessna 172</Model>
+        <Origin>United States</Origin>
+        <Chars>
+            <Type>Private</Type>
+            <CrewSeats>1</CrewSeats>
+            <OtherChars>
+                <Capacity>54</Capacity>
+                <PassengerSeats>3</PassengerSeats>
+            </OtherChars>
+            <Radar>false</Radar>
+        </Chars>
+        <Parameters>
+            <Length>8.28</Length>
+            <Width>11</Width>
+            <Height>2.72</Height>
+        </Parameters>
+        <Price>100000</Price>
+    </Aircraft>
+</Plane>

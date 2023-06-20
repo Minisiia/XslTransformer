@@ -126,6 +126,19 @@ Create an XML file and its corresponding XSD schema.
 
 ```<xsl:value-of select="Visual/Handle/Material/@type"/>``` для извлечения значения атрибута ```type``` тега ```<Material>``` у ```<Handle>```
 
+8. Самолеты.
+
+Преобразовываем в текстовый формат CSV (Comma-Separated Values). Для этого указываем расширение изменяемого файла transformed_plane.csv.
+
+```
+<xsl:text>Model,Origin,Type,Price&#10;</xsl:text>
+```
+столбцы таблицы в текстовом файле выводятся в виде текстовой строки вместе с символом  **&#10;** новой строки
+
+```<xsl:sort select="Price" data-type="number" order="ascending" />``` сортировка по цене
+
+```<xsl:value-of select="concat(Model, ',', Origin, ',', Chars/Type,',', Price)" />``` Функция **concat()** в XSLT объединяет строки или значения выражений в одну строку
+
 ### Основные элементы XSLT
 
 1. <xsl:template>: определяет шаблон для соответствия определенным узлам XML. Вы можете использовать <xsl:template> для определения, какие действия должны быть выполнены при обработке определенных узлов XML.
