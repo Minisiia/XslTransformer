@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="FlatWare" type="FlatWareType"/>
+  <xs:complexType name="TopPartType">
+    <xs:sequence>
+      <xs:element name="Length">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="150"/>
+            <xs:enumeration value="40"/>
+            <xs:enumeration value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Width">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="20"/>
+            <xs:enumeration value="5"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Material">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Steel"/>
+            <xs:enumeration value="Copper"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MaterialType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="HandleType">
+    <xs:sequence>
+      <xs:element type="MaterialType" name="Material"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VisualType">
+    <xs:sequence>
+      <xs:element type="TopPartType" name="TopPart"/>
+      <xs:element type="HandleType" name="Handle"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CutleryType">
+    <xs:sequence>
+      <xs:element name="Type">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Knife"/>
+            <xs:enumeration value="Fork"/>
+            <xs:enumeration value="Spoon"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Origin">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Ukraine"/>
+            <xs:enumeration value="China"/>
+            <xs:enumeration value="Turkey"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="VisualType" name="Visual"/>
+      <xs:element name="Value">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Non-collectible"/>
+            <xs:enumeration value="Collectible"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FlatWareType">
+    <xs:sequence>
+      <xs:element type="CutleryType" name="Cutlery" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

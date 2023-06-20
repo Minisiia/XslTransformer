@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Plane" type="PlaneType"/>
+  <xs:complexType name="OtherCharsType">
+    <xs:sequence>
+      <xs:element name="Capacity">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="128000"/>
+            <xs:enumeration value="575000"/>
+            <xs:enumeration value="54"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="PassagerSeats" minOccurs="0"/>
+      <xs:element name="PassengerSeats" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="853"/>
+            <xs:enumeration value="3"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CharsType">
+    <xs:sequence>
+      <xs:element name="Type">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Passenger"/>
+            <xs:enumeration value="Private"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="CrewSeats">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="OtherCharsType" name="OtherChars"/>
+      <xs:element name="Radar">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="true"/>
+            <xs:enumeration value="false"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="Length">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="70"/>
+            <xs:enumeration value="73"/>
+            <xs:enumeration value="8.28"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Width">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="64.4"/>
+            <xs:enumeration value="79.8"/>
+            <xs:enumeration value="11"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Height">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="19.4"/>
+            <xs:enumeration value="24.1"/>
+            <xs:enumeration value="2.72"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AircraftType">
+    <xs:sequence>
+      <xs:element name="Model">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Boeing 747"/>
+            <xs:enumeration value="Airbus A380"/>
+            <xs:enumeration value="Cessna 172"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Origin">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="United States"/>
+            <xs:enumeration value="France"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="CharsType" name="Chars"/>
+      <xs:element type="ParametersType" name="Parameters"/>
+      <xs:element name="Price">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="25000000"/>
+            <xs:enumeration value="30000000"/>
+            <xs:enumeration value="100000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PlaneType">
+    <xs:sequence>
+      <xs:element type="AircraftType" name="Aircraft" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
