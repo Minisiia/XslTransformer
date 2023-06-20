@@ -54,10 +54,15 @@ public class Main {
 //                "src/main/resources/3_tariffs/tariffs.xml",
 //                "src/main/resources/3_tariffs/transformed_tariffs.html");
 
-        System.out.println("4. Лекарственные препараты.");
-        XslTransformer.xslTransform("src/main/resources/4_medications/medications.xslt",
-                "src/main/resources/4_medications/medications.xml",
-                "src/main/resources/4_medications/transformed_medications.html");
+//        System.out.println("4. Лекарственные препараты.");
+//        XslTransformer.xslTransform("src/main/resources/4_medications/medications.xslt",
+//                "src/main/resources/4_medications/medications.xml",
+//                "src/main/resources/4_medications/transformed_medications.html");
+
+        System.out.println("5. Компьютеры.");
+        XslTransformer.xslTransform("src/main/resources/5_computers/computers.xslt",
+                "src/main/resources/5_computers/computers.xml",
+                "src/main/resources/5_computers/transformed_computers.xml");
 
 
 

@@ -101,7 +101,7 @@ Create an XML file and its corresponding XSD schema.
 
    **xsl:apply-templates select="Medication/Versions/Version"**
 
-   **xsl:sort select="Producers/Producer/Package/Price" data-type="number"/**
+   **xsl:sort select="Producers/Producer/Package/Price" data-type="number"**
 
    **xsl:value-of select="../../Name"** перейти на два уровня вверх от текущего элемента ```<Version>```, затем получить значение элемента ```<Name>``` (для каждой версии лекарства повторяется название)
 
