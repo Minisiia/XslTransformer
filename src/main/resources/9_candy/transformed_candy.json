@@ -1,0 +1,52 @@
+[
+  {
+    "Name": "Toffee",
+    "Energy": 120,
+    "Type": "Caramel",
+    "Ingredients": [
+      "Water",
+      "Sugar",
+      "Fructose"
+    ],
+    "Value": {
+      "Protein": 1,
+      "Fat": 5,
+      "Carbohydrate": 20
+    },
+    "Production": "ABC Confectionery"
+  },
+  {
+    "Name": "Chocolate Bar",
+    "Energy": 150,
+    "Type": "Chocolate",
+    "Ingredients": [
+      "Water",
+      "Sugar",
+      "Fructose",
+      "Milk Chocolate"
+    ],
+    "Value": {
+      "Protein": 2,
+      "Fat": 10,
+      "Carbohydrate": 30
+    },
+    "Production": "Def Candy Factory"
+  },
+  {
+    "Name": "Marshmallow",
+    "Energy": 90,
+    "Type": "Iris",
+    "Ingredients": [
+      "Water",
+      "Sugar",
+      "Fructose",
+      "Vanillin"
+    ],
+    "Value": {
+      "Protein": 0.5,
+      "Fat": 0.1,
+      "Carbohydrate": 22
+    },
+    "Production": "XYZ Sweets"
+  }
+]

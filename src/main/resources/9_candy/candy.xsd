@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Candy" type="CandyType"/>
+  <xs:complexType name="IngredientsType">
+    <xs:sequence>
+      <xs:element name="Ingredient" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Water"/>
+            <xs:enumeration value="Sugar"/>
+            <xs:enumeration value="Fructose"/>
+            <xs:enumeration value="Vanillin"/>
+            <xs:enumeration value="Milk Chocolate"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ValueType">
+    <xs:sequence>
+      <xs:element name="Protein">
+        <xs:simpleType>
+          <xs:restriction base="xs:double">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="0.5"/>
+            <xs:enumeration value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Fat">
+        <xs:simpleType>
+          <xs:restriction base="xs:double">
+            <xs:enumeration value="5"/>
+            <xs:enumeration value="0.1"/>
+            <xs:enumeration value="10"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Carbohydrate">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="20"/>
+            <xs:enumeration value="22"/>
+            <xs:enumeration value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CandyItemType">
+    <xs:sequence>
+      <xs:element name="Name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Toffee"/>
+            <xs:enumeration value="Marshmallow"/>
+            <xs:enumeration value="Chocolate Bar"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Energy">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="120"/>
+            <xs:enumeration value="90"/>
+            <xs:enumeration value="150"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Type">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Caramel"/>
+            <xs:enumeration value="Iris"/>
+            <xs:enumeration value="Chocolate"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="IngredientsType" name="Ingredients"/>
+      <xs:element type="ValueType" name="Value"/>
+      <xs:element name="Production">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ABC Confectionery"/>
+            <xs:enumeration value="XYZ Sweets"/>
+            <xs:enumeration value="Def Candy Factory"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CandyType">
+    <xs:sequence>
+      <xs:element type="CandyItemType" name="CandyItem" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
