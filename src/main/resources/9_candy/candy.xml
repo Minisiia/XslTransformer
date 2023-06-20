@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Candy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="candy.xsd">
+    <CandyItem>
+        <Name>Toffee</Name>
+        <Energy>120</Energy>
+        <Type>Caramel</Type>
+        <Ingredients>
+            <Ingredient>Water</Ingredient>
+            <Ingredient>Sugar</Ingredient>
+            <Ingredient>Fructose</Ingredient>
+        </Ingredients>
+        <Value>
+            <Protein>1</Protein>
+            <Fat>5</Fat>
+            <Carbohydrate>20</Carbohydrate>
+        </Value>
+        <Production>ABC Confectionery</Production>
+    </CandyItem>
+    <CandyItem>
+        <Name>Marshmallow</Name>
+        <Energy>90</Energy>
+        <Type>Iris</Type>
+        <Ingredients>
+            <Ingredient>Water</Ingredient>
+            <Ingredient>Sugar</Ingredient>
+            <Ingredient>Fructose</Ingredient>
+            <Ingredient>Vanillin</Ingredient>
+        </Ingredients>
+        <Value>
+            <Protein>0.5</Protein>
+            <Fat>0.1</Fat>
+            <Carbohydrate>22</Carbohydrate>
+        </Value>
+        <Production>XYZ Sweets</Production>
+    </CandyItem>
+    <CandyItem>
+        <Name>Chocolate Bar</Name>
+        <Energy>150</Energy>
+        <Type>Chocolate</Type>
+        <Ingredients>
+            <Ingredient>Water</Ingredient>
+            <Ingredient>Sugar</Ingredient>
+            <Ingredient>Fructose</Ingredient>
+            <Ingredient>Milk Chocolate</Ingredient>
+        </Ingredients>
+        <Value>
+            <Protein>2</Protein>
+            <Fat>10</Fat>
+            <Carbohydrate>30</Carbohydrate>
+        </Value>
+        <Production>Def Candy Factory</Production>
+    </CandyItem>
+</Candy>

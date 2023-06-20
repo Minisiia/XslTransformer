@@ -57,8 +57,11 @@ public class Main {
 //        System.out.println("7. Столовые приборы.");
 //        XslTransformer.xslTransform("7_cutlery","cutlery.xslt","cutlery.xml","transformed_cutlery.html");
 
-        System.out.println("8. Самолеты.");
-        XslTransformer.xslTransform("8_planes","plane.xslt","plane.xml","transformed_plane.csv");
+//        System.out.println("8. Самолеты.");
+//        XslTransformer.xslTransform("8_planes","plane.xslt","plane.xml","transformed_plane.csv");
+
+        System.out.println("9. Конфеты.");
+        XslTransformer.xslTransform("9_candy","candy.xslt","candy.xml","transformed_candy.json");
 
 
     }
