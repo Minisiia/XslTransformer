@@ -22,39 +22,42 @@ Create an XML file and its corresponding XSD schema.
 
 1. Оранжерея.
 
-   **xsl:for-each** для перебора всех дочерних элементов ```<Plant>``` внутри ```<Flower>```.
+   ```<xsl:for-each select="Flower/Plant">``` для перебора всех дочерних элементов ```<Plant>``` внутри ```<Flower>```.
 
-   **xsl:sort** сортировка по значению элемента ```<Temperature>``` в возрастающем порядке.
+   ```xsl:sort select="GrowingTips/Temperature" data-type="number" order="ascending" />``` сортировка по значению элемента ```<Temperature>``` в возрастающем порядке.
+
 2. Алмазный фонд.
 
-   **xsl:value-of** для извлечения значения  ```<Name>```, ```<Preciousness>```,  ```<Origin>```, ```<Color>```,  ```<Transparency>```, ```<Facets>```   
+   ```<xsl:value-of select="Name"/>``` для извлечения значения  ```<Name>```, ```<Preciousness>```,  ```<Origin>```, ```<Color>```,  ```<Transparency>```, ```<Facets>```   
 
-   **xsl:apply-templates** вызов шаблона для реализации ```<VisualParameters>```
+   ``` <xsl:apply-templates select="VisualParameters"/>``` вызов шаблона для реализации ```<VisualParameters>```
+
 3. Тарифы мобильных компаний.
 
-   **xsl:apply-templates select="Tariff/Rate"** вызов шаблона всем элементам ```<Rate>```, которые являются дочерними элементами элемента ```<Tariff>```.
+   ```<xsl:apply-templates select="Tariff/Rate">``` вызов шаблона всем элементам ```<Rate>```, которые являются дочерними элементами элемента ```<Tariff>```.
 
-   **xsl:sort select="Payroll" data-type="number"** Атрибут data-type="number" указывает тип данных для сортировки. В данном случае, мы указываем тип данных "number" (число), так как абонентская плата обычно представляет числовое значение.
+   ```<xsl:sort select="Payroll" data-type="number">``` Атрибут data-type="number" указывает тип данных для сортировки. В данном случае, мы указываем тип данных "number" (число), так как абонентская плата обычно представляет числовое значение.
    
-   **xsl:value-of**
+   ```<xsl:value-of>```
 4. Лекарственные препараты.
 
-   **xsl:apply-templates select="Medication/Versions/Version"**
+   ```<xsl:apply-templates select="Medication/Versions/Version">```
 
-   **xsl:sort select="Producers/Producer/Package/Price" data-type="number"**
+   ```<xsl:sort select="Producers/Producer/Package/Price" data-type="number">```
 
-   **xsl:value-of select="../../Name"** перейти на два уровня вверх от текущего элемента ```<Version>```, затем получить значение элемента ```<Name>``` (для каждой версии лекарства повторяется название)
+   ```<xsl:value-of select="../../Name">``` перейти на два уровня вверх от текущего элемента ```<Version>```, затем получить значение элемента ```<Name>``` (для каждой версии лекарства повторяется название)
 
 5. Компьютеры.
 
-   **xsl:strip-space elements="*"** указывает процессору XSLT на удаление пустых строк
+```<xsl:strip-space elements="*">``` указывает процессору XSLT на удаление пустых строк
 
-    ```<xsl:text>&#xA;</xsl:text> ``` добавление пустой строки. Символ **&#xA;** в XML представляет собой символ новой строки (Line Feed, LF). Он используется для обозначения перевода строки или добавления пустой строки в текстовом контексте XML.
+```<xsl:text>&#xA;</xsl:text> ``` добавление пустой строки. Символ **&#xA;** в XML представляет собой символ новой строки (Line Feed, LF). Он используется для обозначения перевода строки или добавления пустой строки в текстовом контексте XML.
 
    ```
    <xsl:copy>
    <xsl:apply-templates select="node()[local-name() != 'Critical']" />
-   </xsl:copy>```
+   </xsl:copy>
+   ```
    
 Данный код позволяет скопировать узел кроме дочернего элемента ```Critical```
 
@@ -83,7 +86,7 @@ Create an XML file and its corresponding XSD schema.
 
 Преобразовываем в формат json.
 
-В главном шаблоне: **xsl:text** для [], **xsl:apply-templates select="Candy/CandyItem** и **xsl:sort select="Production"** для сортировки по производителю.
+В главном шаблоне: ```<xsl:text>``` для [], ```<xsl:apply-templates select="Candy/CandyItem>``` и ```<xsl:sort select="Production">``` для сортировки по производителю.
 
 В шаблоне для элементов ```<CandyItem>```:
 
