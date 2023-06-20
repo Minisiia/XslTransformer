@@ -111,9 +111,10 @@ Create an XML file and its corresponding XSD schema.
 
     ```<xsl:text>&#xA;</xsl:text> ``` добавление пустой строки 
 
-   ```<xsl:copy>
-      <xsl:apply-templates select="node()[local-name() != 'Critical']" />
-      </xsl:copy>```
+   ```
+   <xsl:copy>
+   <xsl:apply-templates select="node()[local-name() != 'Critical']" />
+   </xsl:copy>```
    
 Данный код позволяет скопировать узел кроме дочернего элемента ```Critical```
 
