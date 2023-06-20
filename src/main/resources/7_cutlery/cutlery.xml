@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FlatWare xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="cutlery.xsd">
+    <Cutlery>
+        <Type>Knife</Type>
+        <Origin>Ukraine</Origin>
+        <Visual>
+            <TopPart>
+                <Length>150</Length>
+                <Width>20</Width>
+                <Material>Steel</Material>
+            </TopPart>
+            <Handle>
+                <Material type="Oak">Wood</Material>
+            </Handle>
+        </Visual>
+        <Value>Non-collectible</Value>
+    </Cutlery>
+    <Cutlery>
+        <Type>Fork</Type>
+        <Origin>China</Origin>
+        <Visual>
+            <TopPart>
+                <Length>40</Length>
+                <Width>5</Width>
+                <Material>Steel</Material>
+            </TopPart>
+            <Handle>
+                <Material>Plastic</Material>
+            </Handle>
+        </Visual>
+        <Value>Collectible</Value>
+    </Cutlery>
+    <Cutlery>
+        <Type>Spoon</Type>
+        <Origin>Turkey</Origin>
+        <Visual>
+            <TopPart>
+                <Length>30</Length>
+                <Width>5</Width>
+                <Material>Copper</Material>
+            </TopPart>
+            <Handle>
+                <Material type="Pine">Wood</Material>
+            </Handle>
+        </Visual>
+        <Value>Non-collectible</Value>
+    </Cutlery>
+</FlatWare>

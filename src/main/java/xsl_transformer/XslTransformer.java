@@ -8,14 +8,15 @@ import javax.xml.transform.stream.StreamSource;
 
 public class XslTransformer {
 
-    public static void xslTransform(String xslFilePath, String sourceXmlFilePath, String transformedFilePath) {
+    public static void xslTransform(String taskFolder, String xslFile, String sourceXmlFile, String transformedFile) {
+        String path = "src/main/resources/";
         try {
             TransformerFactory tf = TransformerFactory.newInstance();
             // установка используемого XSL-преобразования
-            Transformer transformer = tf.newTransformer(new StreamSource(xslFilePath));
+            Transformer transformer = tf.newTransformer(new StreamSource(path + taskFolder + "/" + xslFile));
             // установка исходного XML-документа и конечного XML-файла
-            transformer.transform(new StreamSource(sourceXmlFilePath),
-                    new StreamResult(transformedFilePath));
+            transformer.transform(new StreamSource(path + taskFolder + "/" + sourceXmlFile),
+                    new StreamResult(path + taskFolder + "/" + transformedFile));
             System.out.println("Transform complete");
         } catch (
                 TransformerException e) {

@@ -39,31 +39,23 @@ import xsl_transformer.XslTransformer;
 public class Main {
     public static void main(String[] args) {
 
-//        System.out.println("1. Оранжерея");
-//        XslTransformer.xslTransform("src/main/resources/1_greenhouse/diamond.xslt",
-//                "src/main/resources/1_greenhouse/diamond.xml",
-//                "src/main/resources/1_greenhouse/transformed_greenhouse.html");
+        System.out.println("1. Оранжерея");
+        XslTransformer.xslTransform("1_greenhouse","greenhouse.xslt","greenhouse.xml","transformed_greenhouse.html");
 
-//        System.out.println("2. Алмазный фонд");
-//        XslTransformer.xslTransform("src/main/resources/2_diamond_fund/diamond.xslt",
-//                "src/main/resources/2_diamond_fund/diamond.xml",
-//                "src/main/resources/2_diamond_fund/transformed_diamond.xml");
+        System.out.println("2. Алмазный фонд");
+        XslTransformer.xslTransform("2_diamond_fund","diamond.xslt","diamond.xml","transformed_diamond.xml");
 
-//        System.out.println("3. Тарифы мобильных компаний.");
-//        XslTransformer.xslTransform("src/main/resources/3_tariffs/tariffs.xslt",
-//                "src/main/resources/3_tariffs/tariffs.xml",
-//                "src/main/resources/3_tariffs/transformed_tariffs.html");
+        System.out.println("3. Тарифы мобильных компаний.");
+        XslTransformer.xslTransform("3_tariffs","tariffs.xslt","tariffs.xml","transformed_tariffs.html");
 
-//        System.out.println("4. Лекарственные препараты.");
-//        XslTransformer.xslTransform("src/main/resources/4_medications/medications.xslt",
-//                "src/main/resources/4_medications/medications.xml",
-//                "src/main/resources/4_medications/transformed_medications.html");
+        System.out.println("4. Лекарственные препараты.");
+        XslTransformer.xslTransform("4_medications","medications.xslt","medications.xml","transformed_medications.html");
 
         System.out.println("5. Компьютеры.");
-        XslTransformer.xslTransform("src/main/resources/5_computers/computers.xslt",
-                "src/main/resources/5_computers/computers.xml",
-                "src/main/resources/5_computers/transformed_computers.xml");
+        XslTransformer.xslTransform("5_computers","computers.xslt","computers.xml","transformed_computers.xml");
 
+        System.out.println("7. Столовые приборы.");
+        XslTransformer.xslTransform("7_cutlery","cutlery.xslt","cutlery.xml","transformed_cutlery.html");
 
 
     }

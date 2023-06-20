@@ -109,7 +109,7 @@ Create an XML file and its corresponding XSD schema.
 
    **xsl:strip-space elements="*"** указывает процессору XSLT на удаление пустых строк
 
-    ```<xsl:text>&#xA;</xsl:text> ``` добавление пустой строки 
+    ```<xsl:text>&#xA;</xsl:text> ``` добавление пустой строки. Символ **&#xA;** в XML представляет собой символ новой строки (Line Feed, LF). Он используется для обозначения перевода строки или добавления пустой строки в текстовом контексте XML.
 
    ```
    <xsl:copy>
@@ -118,6 +118,13 @@ Create an XML file and its corresponding XSD schema.
    
 Данный код позволяет скопировать узел кроме дочернего элемента ```Critical```
 
+7. Столовые приборы.
+
+```<xsl:for-each select="FlatWare/Cutlery">``` для перебора всех дочерних элементов ```<Cutlery>``` внутри ```<FlatWare>```.
+
+```<xsl:sort select="Visual/TopPart/Length" data-type="number"/> ``` сортировка по значению элемента ```<Length>``` в возрастающем порядке.
+
+```<xsl:value-of select="Visual/Handle/Material/@type"/>``` для извлечения значения атрибута ```type``` тега ```<Material>``` у ```<Handle>```
 
 ### Основные элементы XSLT
 

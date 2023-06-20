@@ -7,51 +7,21 @@
             <Transparency>80</Transparency>
             <Facets>57</Facets>
         </VisualParameters>
-        <VisualParameters>
-            <Color>Green</Color>
-            <Transparency>90</Transparency>
-            <Facets>15</Facets>
-        </VisualParameters>
-        <VisualParameters>
-            <Color>Purple</Color>
-            <Transparency>70</Transparency>
-            <Facets>12</Facets>
-        </VisualParameters>
         <Value>1.5</Value>
     </Stone>
     <Stone>
         <Name>Emerald</Name>
         <Preciousness>Precious</Preciousness>
         <VisualParameters>
-            <Color>White</Color>
-            <Transparency>80</Transparency>
-            <Facets>57</Facets>
-        </VisualParameters>
-        <VisualParameters>
             <Color>Green</Color>
             <Transparency>90</Transparency>
             <Facets>15</Facets>
-        </VisualParameters>
-        <VisualParameters>
-            <Color>Purple</Color>
-            <Transparency>70</Transparency>
-            <Facets>12</Facets>
         </VisualParameters>
         <Value>0.75</Value>
     </Stone>
     <Stone>
         <Name>Amethyst</Name>
         <Preciousness>Semi-precious</Preciousness>
-        <VisualParameters>
-            <Color>White</Color>
-            <Transparency>80</Transparency>
-            <Facets>57</Facets>
-        </VisualParameters>
-        <VisualParameters>
-            <Color>Green</Color>
-            <Transparency>90</Transparency>
-            <Facets>15</Facets>
-        </VisualParameters>
         <VisualParameters>
             <Color>Purple</Color>
             <Transparency>70</Transparency>
